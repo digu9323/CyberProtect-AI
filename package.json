@@ -1,0 +1,1 @@
+{"name":"cyberprotect-ai","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"@fortawesome/fontawesome-free":"^7.3.1","@react-oauth/google":"^0.13.5","react":"^19.2.8","react-dom":"^19.2.8","react-router-dom":"^7.18.2"},"devDependencies":{"@vitejs/plugin-react":"^6.0.4","vite":"^8.2.0"}}
