@@ -935,3 +935,129 @@ input {
     font-size: 26px;
   }
 }
+
+/* Recovery and OTP pages */
+
+.auth-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 211, 238, 0.12);
+  color: #22d3ee;
+  font-size: 27px;
+}
+
+.auth-text-btn {
+  background: none;
+  border: none;
+  color: #22d3ee;
+  font: inherit;
+  cursor: pointer;
+}
+
+.auth-text-btn:hover {
+  text-decoration: underline;
+}
+
+.recovery-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.password-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  color: #cbd5e1;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.password-toggle input {
+  accent-color: #22d3ee;
+}
+
+.password-hint {
+  color: #94a3b8;
+  font-size: 13px;
+  margin: 8px 0 18px;
+}
+
+/* OTP Verified page - button layout */
+.auth-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.auth-actions .primary-btn {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-actions .primary-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(35, 190, 235, 0.2);
+}
+
+.auth-actions .primary-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Six-digit OTP input boxes */
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 28px 0 18px;
+}
+
+.otp-inputs .otp-box {
+  width: 48px;
+  height: 54px;
+  flex: 1;
+  min-width: 0;
+  max-width: 54px;
+  border: 1px solid #245267;
+  border-radius: 10px;
+  outline: none;
+  background: #142b3a;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+  caret-color: #25c8ed;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.otp-inputs .otp-box:focus {
+  border-color: #25c8ed;
+  box-shadow: 0 0 0 3px rgba(37, 200, 237, 0.13);
+}
+
+@media (max-width: 380px) {
+  .otp-inputs {
+    gap: 6px;
+  }
+
+  .otp-inputs .otp-box {
+    height: 48px;
+    font-size: 20px;
+  }
+}

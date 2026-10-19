@@ -255,7 +255,7 @@ const Signup = () => {
 
             {/* First Name */}
             <div className="input-group">
-              <label htmlFor="name">First Name</label>
+              <label htmlFor="name">Name</label>
 
               <input
                 id="name"

@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 const sendOTPEmail = async (email, otp) => {
   await transporter.sendMail({
-    from: `"CyberProtect AI" digu9323@gmail.com`,
+    from: `"CyberProtect AI" cyberprotectai@gmail.com`,
     to: email,
     subject: "CyberProtect AI - Verify Your Email",
 
